@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Otra tabla con diferentes botones</title>
+</head>
+<body>
+	<h1>Armar una tabla con nombre de anime, estudio y año de salida al aire</h1>
+	<h1>Luego de armada la tabla con los datos del archhivo js, hacer boton que:</h1>
+	<ul>
+		<li>Muestre los animes segun el año de estreno en el HTMl: Hecho</li>
+		<li>Muestre los animes que se hayan hecho en el mismo estudio</li>
+		<li>Muestre solo los generos de los anime en la consola : hecho</li>
+		<li>Muestre el anime en la consola y en el HTML si su genero psycologic :Hecho </li>
+		<li>Muestre el anime en la consola y en el HTML si su genero Isekai :Hecho </li>
+	</ul>
+
+	<table id="tabla">
+		<tr>
+			<th>Anime</th>
+			<th>Estudio</th>
+			<th>Genero</th>
+			<th>Año</th>
+			<th>Temporada</th>
+		</tr>
+	</table>
+	<table>
+		<table id="intro">
+	</table>
+
+
+
+
+<input type="button" value="Ordenar segun año de estreno" onclick="añoestreno()" />
+<br>
+<input type="button" value="Mostrar solo anime de genero psicologic" onclick="mostrarPsico()" />
+<br>
+<input type="button" value="Mostrar solo anime de genero Isekai" onclick="mostrarIsekai()" />
+<br>
+<input type="button" value="Mostrar anime de una sola temporada" onclick="mostrarUna()" />
+<br>
+<input type="button" value="Mostrar anime de mas de una temporada" onclick="mostrarDosoMas()" />
+<br>
+<br>
+
+Buscas un anime de cuantas temporadas:<input type="number" size="12" name="entrada" />
+<input type="button" value="Ver segun temporada" onclick=segunTemporada() />
+
+<br>
+<br>
+Buscar anime segun estudio de animacion:<input type="text" size="12" name="segunestudio" />
+<input type="button" value="Ver segun estudio" onclick=segunEstudio() />
+
+<br>
+<br>
+Buscar anime por el nombre: :<input type="text" size="12" name="buscarNombre" />
+<input type="button" value="Buscar en la tabla" onclick=segunNombre() />
+
+
+
+<script src="paraanime.js"> </script>
+</body>
+</html>
